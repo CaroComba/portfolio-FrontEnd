@@ -1,0 +1,21 @@
+Algoritmo contrasena 
+	Definir contrasenia Como Caracter
+	Definir intentos Como Entero
+	intentos = 1
+	Hacer
+		Escribir "Ingresar contraseña correcta. Intento numero: ", intentos
+		Leer contrasenia
+		intentos = intentos + 1
+		
+		Si contrasenia = "eureka" Entonces
+			Escribir "La contraseña es correcta"
+		FinSi
+		Si contrasenia <> "eureka" y intentos = 3 Entonces
+			Escribir "Ultimo intento de escribir la contraseña"
+		FinSi
+		
+	Mientras Que contrasenia <> "eureka" y intentos <= 3
+	
+	Escribir "Se terminaron los intentos"
+	
+FinAlgoritmo
